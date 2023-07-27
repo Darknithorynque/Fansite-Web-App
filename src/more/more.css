@@ -1,0 +1,33 @@
+
+.searchbar{
+
+    position: relative;
+    top: 50px;
+    right: 36%;
+    left: 36%;
+    width: 500px;
+    transform: translate("-36%","-36%"); 
+    
+}
+
+#card2{
+
+    height: 3180px;
+    margin-top: 50px;
+
+}
+
+
+#fix{
+
+    margin-left: 0px;
+    
+
+}
+
+button{
+
+    border:none;
+    background-color: #fff;
+    width: 2rem;
+}

@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import  ReactDOM  from 'react-dom';
+import Navbar from './navbar';
+import GetTouch from './getTouch';
+import ContextElliot from './contextElliot';
+import Footer from './footer';
+import Home from './home';
+import { Link, Route, Routes } from 'react-router-dom';
+import  About  from './more/about';
+import Movies from './more/movies';
+import Series from './more/tvShows';
+import DirectedBy from './more/directedBy';
+import More from './more/more';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App4 = (props) =>{
+
+
+    const whenSubmit = (entry) => {
+
+        console.log(entry)
+
+    }
+
+    return(
+     
+                <Routes>
+
+                    <Route exac path='/' element={<Home />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/movies' element={<Movies />} />
+                    <Route path='/tvShows' element={<Series />} />
+                    <Route path='/directedBy' element={<DirectedBy />} />
+                    <Route path='/more' element={<More  />}></Route>
+
+
+
+
+                </Routes>
+
+        
+
+    )
+
 }
 
-export default App;
+export default App4;
+
